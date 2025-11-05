@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div className="home-container">
       <header className="header">
-        <h1 className="logo">CampusLink</h1>
+        <h1 className="logo">MyStudent</h1>
         <nav className="nav">
           <a href="#">Accueil</a>
           <a href="#">Annonces</a>
