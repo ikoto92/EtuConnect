@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/HomePage.css"; // ou ../styles/Annonces.css si tu veux séparer
+import "../styles/HomePage.css";
 
 const AnnonceCard = ({ annonce, isFavorite, onToggleFavorite }) => {
   const { id, title, description, category, city, date, authorPhoto, authorName } = annonce;

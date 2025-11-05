@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import AnnonceCard from "../components/AnnonceCard";
-import "../styles/HomePage.css"; // réutilise ton CSS existant
+import "../styles/HomePage.css"; 
 
 const LOCAL_KEY = "campuslink_annonces";
 const FAVORITES_KEY = "campuslink_favs";
@@ -18,12 +18,12 @@ const Annonces = () => {
     }
   });
 
-  // load annonces from localStorage on mount
+ 
   useEffect(() => {
     try {
       const stored = localStorage.getItem(LOCAL_KEY);
       if (!stored) {
-        // initialize with sample data if empty
+      
         const sample = [
           {
             id: "a1",
@@ -58,7 +58,7 @@ const Annonces = () => {
     }
   }, []);
 
-  // persist favorites
+
   useEffect(() => {
     try {
       localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
@@ -72,7 +72,7 @@ const Annonces = () => {
 
   const filtered = useMemo(() => {
     let list = annonces.slice();
-    // search
+ 
     if (q.trim()) {
       const term = q.toLowerCase();
       list = list.filter(a =>
@@ -82,7 +82,7 @@ const Annonces = () => {
       );
     }
 
-    // category
+  
     if (category !== "Tous") {
       list = list.filter(a => a.category === category);
     }
