@@ -3,15 +3,16 @@ import profilPic from '../assets/magician-8763894_1280.png';
 import liker from '../assets/like.png';
 import comment from '../assets/comment.png';
 import share from '../assets/share.png';
-function Post() {
+
+function Post({ username = "@utilisateur", timeAgo = "Il y a 2h", content = "Ceci est un post d'exemple sur le reseau inter étudiant." }) {
   return (
     <div className="card">
       <div className="user">
         <img src={profilPic} alt="" />
-        <span>@utilisateur</span><br />
-        <span>Il y a 2h</span>
+        <span>{username}</span><br />
+        <span>{timeAgo}</span>
       </div>
-      <span className='textContent'>Ceci est un post d'exemple sur le reseau inter étudiant.</span>
+      <span className='textContent'>{content}</span>
       <ul>
         <li><img src={liker} alt="" /></li>
         <li><img src={comment} alt="" /></li>
