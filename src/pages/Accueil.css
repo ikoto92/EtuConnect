@@ -1,0 +1,41 @@
+h1{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+section{
+  width: 70%;
+  margin: 0 auto;
+  background-color: #2F3031;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 5px 50px;
+}
+.actualité{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.actualité h2{
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.actuBtn{
+  background-color: transparent;
+  width: 250px;
+  color: white;
+  border: solid 1px #A2A2A2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: start;
+}
