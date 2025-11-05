@@ -8,10 +8,11 @@ function Post() {
     <div className="card">
       <div className="user">
         <img src={profilPic} alt="" />
-        <p>Utilisateur</p>
+        <span>@utilisateur</span><br />
+        <span>Il y a 2h</span>
       </div>
-      <p>Ceci est un post d'exemple sur le reseau inter étudiant.</p>
-      <ul className="iconeScocialNetwork">
+      <span className='textContent'>Ceci est un post d'exemple sur le reseau inter étudiant.</span>
+      <ul>
         <li><img src={liker} alt="" /></li>
         <li><img src={comment} alt="" /></li>
         <li><img src={share} alt="" /></li>

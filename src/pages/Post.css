@@ -4,20 +4,30 @@
     border-radius: 8px;
 }
 
-.user{
+.card .user{
   display: flex;
-  align-items: flex-start;
-  
+  align-items: center;
+  color: #A2A2A2;
+  gap: 10px;
+  margin-bottom: 7px;
 }
-.user img{
-  width: 50px;
-  height: 50px;
+.card .textContent{
+  color: #FFFFFF;
+  font-weight: 200;
+  padding-left: 50px;
+}
+.card .user img{
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
-  text-align: left;
 }
-ul li img{
+.card ul{
+  margin-top: 7px;
+  display: flex;
+  gap: 7px;
+}
+.card li img{
   width: 20px;
   height: 20px;
   object-fit: contain; 
-  gap: 5px;
 }

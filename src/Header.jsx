@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <h1>MyStudent</h1>
-      <nav>
+      <nav className='navBar'>
         <ul>
           <li><a href="#"><img src={accueil} alt="" /><p>Accueil</p></a></li>
           <li><a href="#"><img src={imgPost} alt="Post" /><p>Post</p></a></li>
