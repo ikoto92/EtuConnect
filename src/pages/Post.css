@@ -31,3 +31,6 @@
   height: 20px;
   object-fit: contain; 
 }
+.card .time{
+  font-size: 1.3rem;
+}
