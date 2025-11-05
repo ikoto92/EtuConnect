@@ -167,6 +167,70 @@ body, html {
   background: #66e0ff;
 }
 
+/* --- Annonces specific --- */
+.annonce-card {
+  background: #0f1720;
+  border: 1px solid #2d3748;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.annonce-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.annonce-meta {
+  margin-left: 8px;
+  flex: 1;
+  text-align: left;
+}
+
+.annonce-author {
+  font-weight: 700;
+  color: #fafafa;
+}
+
+.annonce-time {
+  font-size: 12px;
+  color: #9aa3b2;
+}
+
+.annonce-title {
+  margin: 10px 0 6px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.annonce-desc {
+  color: #cfd8df;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.annonce-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  color: #9aa3b2;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #8aa4b7;
+}
+
+.fav-btn.fav-active {
+  color: #ff6b81;
+}
+
 /* --- Footer --- */
 .footer {
   text-align: center;
