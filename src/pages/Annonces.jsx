@@ -87,7 +87,7 @@ const Annonces = () => {
       list = list.filter(a => a.category === category);
     }
 
-    // sort
+
     if (sort === "recent") {
       list.sort((x, y) => new Date(y.date) - new Date(x.date));
     } else if (sort === "title") {
