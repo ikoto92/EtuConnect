@@ -9,6 +9,24 @@ function PagePost() {
       timeAgo: "Il y a 2h",
       content: "Ceci est un post d'exemple sur le reseau inter étudiant."
     },
+    {
+        id: 2,
+        username: "@etudiant2",
+        timeAgo: "Il y a 30min",
+        content: "Un autre post pour montrer la fonctionnalité."
+    },
+    {
+        id: 3,
+        username: "@etudiant3",
+        timeAgo: "Il y a 10min",
+        content: "Salut tout le monde ! Ravi d'être ici."
+    },
+    {
+        id: 4, 
+        username: "@etudiant4",
+        timeAgo: "Il y a 5min",
+        content: "Quelqu'un a des conseils pour les examens ?"
+    }
   ]);
 
   const [showForm, setShowForm] = useState(false);
