@@ -4,6 +4,8 @@ import profilPic from "../assets/magician-8763894_1280.png";
 import liker from "../assets/like.png";
 import comment from "../assets/comment.png";
 import share from "../assets/share.png";
+import send from "../assets/envoyer.png";
+import emoji from "../assets/emoji.png";
 
 function Post({
   username = "@utilisateur",
@@ -14,6 +16,9 @@ function Post({
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [showComments, setShowComments] = useState(false);
+  const [showEmojis, setShowEmojis] = useState(false);
+
+  const emojis = ["😀", "😂", "😍", "😎", "🤔", "😭", "🔥", "💪", "🎉", "❤️"];
 
   function handleLike() {
     setLikes((prev) => prev + 1);
@@ -28,10 +33,15 @@ function Post({
     if (!newComment.trim()) return;
     setComments((prev) => [...prev, newComment.trim()]);
     setNewComment("");
+    setShowEmojis(false);
   }
 
   function handleShare() {
     alert("Post partagé !");
+  }
+
+  function handleAddEmoji(emoji) {
+    setNewComment((prev) => prev + emoji);
   }
 
   return (
@@ -61,14 +71,38 @@ function Post({
 
       {showComments && (
         <div className="comments-section">
-          <form onSubmit={handleAddComment}>
-            <input
-              value={newComment}
-              onChange={(e) => setNewComment(e.target.value)}
-              placeholder="Écris un commentaire..."
-            />
-            <button type="submit">Envoyer</button>
+          <form className="formComment" onSubmit={handleAddComment}>
+            <div className="input-container">
+              <button
+                type="button"
+                className="emojiBtn"
+                onClick={() => setShowEmojis(!showEmojis)}
+              ><img src={emoji} alt="" />
+              </button>
+              <input
+                value={newComment}
+                onChange={(e) => setNewComment(e.target.value)}
+                placeholder="Écris un commentaire..."
+              />
+              <button className="btnCommentPost" type="submit">
+                <img src={send} alt="Envoyer" />
+              </button>
+            </div>
           </form>
+
+          {showEmojis && (
+            <div className="emoji-picker">
+              {emojis.map((emoji, i) => (
+                <span
+                  key={i}
+                  className="emoji"
+                  onClick={() => handleAddEmoji(emoji)}
+                >
+                  {emoji}
+                </span>
+              ))}
+            </div>
+          )}
 
           <div className="comment-list">
             {comments.map((c, i) => (
