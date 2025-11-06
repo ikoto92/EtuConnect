@@ -12,7 +12,7 @@ function Header() {
         <ul>
           <li><a href="Accueil"><img src={accueil} alt="" /><p>Accueil</p></a></li>
           <li><a href="pagePost"><img src={imgPost} alt="Post" /><p>Post</p></a></li>
-          <li><a href="#"><img src={imgCommunaute} alt="Communauté" /><p>Communauté</p></a></li>
+          <li><a href="pageCommunaute"><img src={imgCommunaute} alt="Communauté" /><p>Communauté</p></a></li>
           <li><a href="#"><img src={profilImg} alt="Profil" /><p>Profil</p></a></li>
         </ul>
       </nav>

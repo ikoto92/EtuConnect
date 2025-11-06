@@ -1,8 +1,3 @@
-import { useState } from "react";
-
- //List Etudiant
-
-
 
 function PageCommunaute({ user}) {
   return (
