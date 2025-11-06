@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Post from "./Post";
+import './pagePost.css';
 
 function PagePost() {
   const [posts, setPosts] = useState([
@@ -38,17 +39,17 @@ function PagePost() {
 
   return (
     <div>
-      <h2>Page des Posts</h2>
+      <h2>Posts</h2>
       <p>Bienvenue sur la page des posts !</p>
 
       <div>
         {!showForm && (
-          <button onClick={handleAddClick}>Ajouter un post</button>
+          <button className="addPostBtn" onClick={handleAddClick}>Ajouter un post</button>
         )}
 
         {showForm && (
-          <form onSubmit={handleSubmit} style={{ marginTop: 8 }}>
-            <div>
+          <form className="form" onSubmit={handleSubmit} style={{ marginTop: 8 }}>
+            <div className="nomUser">
               <label>
                 Nom d'utilisateur :{' '}
                 <input
@@ -58,7 +59,7 @@ function PagePost() {
                 />
               </label>
             </div>
-            <div>
+            <div className="contenu">
               <label>
                 Contenu :{' '}
                 <textarea
@@ -68,9 +69,9 @@ function PagePost() {
                 />
               </label>
             </div>
-            <div>
-              <button type="submit">Publier</button>{' '}
-              <button type="button" onClick={() => setShowForm(false)}>
+            <div className="btn">
+              <button className="addFormBtn" type="submit">Publier</button>{' '}
+              <button className="addFormBtn" type="button" onClick={() => setShowForm(false)}>
                 Annuler
               </button>
             </div>
