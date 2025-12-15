@@ -1,6 +1,6 @@
 import './Accueil.css';
 import Post from './Post';
-import './Post.css';
+import './Post.css'
 import statut from '../assets/statut.png';
 
 function Accueuil() {

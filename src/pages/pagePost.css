@@ -1,0 +1,100 @@
+.posts-container{
+   background-color: #222124;
+  border: 1px solid #A2A2A2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto 50px;
+}
+.card{
+  margin-top: 10px;
+}
+h2{
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 20px;
+}
+p{
+  color: aliceblue;
+  text-align: center;
+}
+.addPostBtn{
+  margin-left: 50px;
+  margin-bottom: 7px;
+  border: none;
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  background-color: hsl(173, 89%, 28%);
+  transition: background .5s ease;
+  cursor: pointer
+}
+
+.addPostBtn:hover{
+  background-color: hsl(173, 89%, 40%);
+}
+
+.form{
+  margin: 10px 50px;
+  background-color: #A2A2A2;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+}
+.addFormBtn{
+  color: #FFFFFF;
+  background-color: hsl(173, 89%, 28%);
+  transition: background .5s ease;
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  height: 30px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.addFormBtn:hover{
+  background-color: hsl(173, 89%, 40%);
+}
+.nomUser,
+.contenu {
+  display: flex;
+  align-items: center;       /* centre verticalement le label et l’input */
+  justify-content: center;   /* centre horizontalement le tout */
+  width: 100%;
+  gap: 10px;
+}
+
+.nomUser label,
+.contenu label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: #19181A;
+  font-weight: 500;
+}
+
+.nomUser input,
+.contenu textarea {
+  width: 500px;
+  padding: 8px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+  outline: none;
+}
+
+.contenu textarea {
+  min-height: 100px;
+  resize: none;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  gap: 5px;
+}
