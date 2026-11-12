@@ -6,6 +6,7 @@ import PostCard from "../components/PostCard";
 const HomePage = () => {
   return (
     <div className="home-container">
+      
       <header className="header">
         <h1 className="logo">MyStudent</h1>
         <nav className="nav">
@@ -39,6 +40,7 @@ const HomePage = () => {
             time="2 h"
             content="Bienvenue à tous sur la plateforme CampusLink ! Partagez vos projets et vos idées 🎓"
           />
+          
           <PostCard
             author="Sarah"
             time="4 h"
